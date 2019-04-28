@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Player.create(name: "Son Heung Min", position: 'Forward')
+Stat.create(player_id: 1, goals: 12, assists: 6, yellow_cards: 3, red_cards: 0, total_shots: 2.4)

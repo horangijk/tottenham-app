@@ -1,0 +1,12 @@
+<h3>@player.name</h3>
+<h5>@player.position</h5>
+
+<ul>
+    <% @player.stats.each do stat %>
+        <li>Goals: <%= stat.goals %></li>
+        <li>Assists: <%= stat.assists %></li>
+        <li>Total Shots per game: <%= stat.total_shots %></li>
+        <li>Yellow cards: <%= stats.yellow_cards %></li>
+        <li>Red cards: <%= stats.red_cards %></li>
+    <% end %>
+</ul>

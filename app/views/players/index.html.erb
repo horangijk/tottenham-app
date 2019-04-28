@@ -1,6 +1,6 @@
 <h1>Players for Tottenham</h1>
     <ul>
-        <% @players.each(player) %>
+        <% @players.each do player %>
             <li><%= player.name %></li>
         <% end %>
     </ul>
