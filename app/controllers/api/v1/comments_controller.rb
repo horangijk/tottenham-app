@@ -9,17 +9,13 @@ class Api::V1::CommentsController < ApplicationController
         render json: @comment, status: 201
     end
 
-    def new
-        @comment = Comment.new
-    end 
-
     def create
-        @comment = Comment.find(comment_params)
+        @comment = Comment.new(comment_params)
         if @comment.save
             render json: @comment, status: 201
-          else
-            render json: {errors: @comment.errors.full_massages}, status: 422
-          end
+        #   else
+        #     render json: {errors: @comment.errors.full_massages}, status: 422
+        end
     end 
 
     private 

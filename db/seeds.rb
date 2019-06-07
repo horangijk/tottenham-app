@@ -17,5 +17,5 @@ User.create(name: "Bot1", email: 'bot1@gmail.com', password_digest: 'password')
 User.create(name: "Jerold", email: 'iamjooyoung@gmail.com', password_digest: '1234')
 
 Comment.create(description: 'Son is overrated', user: 'Bot1', player_id: 1)
-Comment.create(decription: 'What are you talking about? Son Heung Min is the best South Korean player, in my opinion, both in the present and the past.', user: Jerold, player_id: 1)
+Comment.create(description: 'What are you talking about? Son Heung Min is the best South Korean player, in my opinion, both in the present and the past.', user: 'Jerold', player_id: 1)
 Comment.create(description: 'Harry Kane does not seem to be needed right now. But Kane is the man!!', user: 'Jerold', player_id: 2)
